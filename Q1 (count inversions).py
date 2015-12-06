@@ -8,13 +8,15 @@
 def merge_list(A, B):
     result=[]
     i,j = 0,0
-    nA, nB= len(A), len(B)
+    nA= len(A)
+    nB= len(B)
     while i < nA and j < nB:
         if A[i] < B[j]:
             result.append(A[i])
             i+=1
         elif A[i] > B[j]:
             result.append(B[j])
+            c= nA - i
             j+=1
         elif A[i] == B[j]:
             result.append(A[i])
@@ -22,7 +24,7 @@ def merge_list(A, B):
             j+=1        
     result=result + A[i:]
     result=result + B[j:]
-    return result
+    return result, c
        
 # recursions #    
 def sort_and_count(array):
