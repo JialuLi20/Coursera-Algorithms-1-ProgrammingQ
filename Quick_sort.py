@@ -1,6 +1,7 @@
 
 # Quick sort using first element as the pivot 
 
+# define partition subroutine
 def partition(A, l, r):
     p= A[l] # use first element as the pivot #
     i= l+1
@@ -12,7 +13,7 @@ def partition(A, l, r):
     
     return i-1
           
-                
+# recursive sort                 
 def quick_sort(A, l, r):
     if l < r:
         newpivotindex = partition(A, l, r)
