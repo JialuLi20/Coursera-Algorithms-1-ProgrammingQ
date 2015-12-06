@@ -28,6 +28,6 @@ You should not count comparisons one-by-one. Rather, when there is a recursive c
 
 Solution keys: 
 
-1) 
+1) Given an array of size n, the average running time for Quick sort is O(nlogn).
 
 
