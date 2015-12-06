@@ -14,7 +14,7 @@ Solution keys:
 
 1) For an array of size n, merge sort uses at most 6n(logn+1) operations;
 
-2) The number of inversions is the number of pairs (i,j) of array indices i<j and A[i] > A[j];
+2) The number of inversions is the number of pairs (i,j) of array indices i<j and > A[j];
 
 3) We can recursively compute the number of inversions if the indices lie within one of two subarraies;
 
